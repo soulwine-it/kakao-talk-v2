@@ -34,20 +34,44 @@
         <i class="fas fa-search"></i>
       </span>
       <span class="header__icon">
-        <i class="far fa-comment"></i>
+        <i class="fas fa-comment"></i>
       </span>
       <span class="header__icon">
         <i class="fas fa-cog"></i>
       </span>
     </div>
   </header>
-
+  <!-- 메인태그는 브라우저 내에서 이 부분부터 메인이라고 지정되는 부분을 말합니다. -->
+  <main class="chats">
+    <ul class="chats__list">
+      <li class="chats_chat chat">
+        <div class="chat__column">
+          <img class="chat__avatar" src="images/avatar.jpg" />
+          <div class="chat__content">
+            <span class="chat__username">Lyn</span>
+            <span class="chat__preview">going home!!</span>
+          </div>
+        </div>
+        <div class="chat__column">
+          <span class="chat__timestamp">yesterday</span>
+        </div>
+      </li>
+    </ul>
+  </main>
   <nav class="nav">
     <ul class="nav__list">
-      <li class="nav__list-item"><a href="" class="nav__list-link"></a></li>
-      <li class="nav__list-item"><a href="" class="nav__list-link"></a></li>
-      <li class="nav__list-item"><a href="" class="nav__list-link"></a></li>
-      <li class="nav__list-item"><a href="" class="nav__list-link"></a></li>
+      <li class="nav__list-item"><a href="friends.html" class="nav__list-link">
+          <i class="far fa-user"></i>
+        </a></li>
+      <li class="nav__list-item"><a href="index.html" class="nav__list-link">
+          <i class="fas fa-comment"></i>
+        </a></li>
+      <li class="nav__list-item"><a href="find.html" class="nav__list-link">
+          <i class="fas fa-search"></i>
+        </a></li>
+      <li class="nav__list-item"><a href="more.html" class="nav__list-link">
+          <i class="fas fa-ellipsis-h"></i>
+        </a></li>
 
     </ul>
   </nav>
