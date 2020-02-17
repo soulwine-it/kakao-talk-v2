@@ -1,94 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Chats | Kakao Clone</title>
-  </head>
 
-  <body>
-    <!-- .status-bar g하면 아래처럼 div class~~가 생김 -->
-    <div class="status-bar">
-      <!-- .status-bar*2 하면 2개의 div 박스가 생김 -->
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:56</span>
-      </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Chats | Kakao Clone</title>
+</head>
+
+<body>
+  <!-- .status-bar g하면 아래처럼 div class~~가 생김 -->
+  <div class="status-bar">
+    <!-- .status-bar*2 하면 2개의 div 박스가 생김 -->
+    <div class="status-bar__column">
+      <span class="status-bar__clock">13:56</span>
     </div>
+    <div class="status-bar__column">
+      <i class="fas fa-clock"></i>
+      <i class="fas fa-volume-mute"></i>
+      <i class="fas fa-wifi"></i>
+      <span class="status-bar__battery-level">100%</span>
+      <i class="fas fa-battery-full"></i>
+    </div>
+  </div>
 
-    <!-- 헤더 title과 검색아이콘, 채팅아이콘, 설정 아이콘 생성 -->
-    <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">Chats</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-comment"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
-      </div>
-    </header>
-    <!-- 메인태그는 브라우저 내에서 이 부분부터 메인이라고 지정되는 부분을 말합니다. -->
-    <!-- 채팅에 나오는 image 및 username, preview, time -->
-    <main class="chats">
-      <ul class="chats__list">
-        <li class="chats_chat chat">
-          <a href="chat.html">
-            <div class="chat__column">
-              <img class="chat__avatar g-avatar" src="images/avatar.jpg" />
-              <div class="chat__content">
-                <span class="chat__username">Lyn</span>
-                <span class="chat__preview">going home!!</span>
+  <!-- 헤더 title과 검색아이콘, 채팅아이콘, 설정 아이콘 생성 -->
+  <header class="header">
+    <div class="header__header-column">
+      <h1 class="header__title">Chats</h1>
+    </div>
+    <div class="header__header-column">
+      <span class="header__icon">
+        <i class="fas fa-search"></i>
+      </span>
+      <span class="header__icon">
+        <i class="fas fa-comment"></i>
+      </span>
+      <span class="header__icon">
+        <i class="fas fa-cog"></i>
+      </span>
+    </div>
+  </header>
+  <!-- 메인태그는 브라우저 내에서 이 부분부터 메인이라고 지정되는 부분을 말합니다. -->
+  <!-- 채팅에 나오는 image 및 username, preview, time -->
+  <main class="chats">
+    <ul class="chats__list">
+      <li class="chats_chat chat">
+        <a href="chat.html">
+
+          <div class="chats__chat friend friend--lg">
+            <div class="friend_column">
+              <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
+              <div class="friend_content">
+                <span class="friend_name">
+                  Lynn
+                </span>
+                <span class="friend__bottom--text">
+                  Going home
+                </span>
               </div>
             </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">yesterday</span>
+            <div class="friend__column">
+              <div class="friend__now-listening">
+                <span class="chat_timestamp">
+                  March 8
+                </span>
+              </div>
             </div>
-          </a>
-        </li>
-      </ul>
-    </main>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="friends.html" class="nav__list-link">
-            <i class="far fa-user"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="index.html" class="nav__list-link">
-            <i class="fas fa-comment"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="find.html" class="nav__list-link">
-            <i class="fas fa-search"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="more.html" class="nav__list-link">
-            <i class="fas fa-ellipsis-h"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </body>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </main>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__list-item">
+        <a href="friends.html" class="nav__list-link">
+          <i class="far fa-user"></i>
+        </a>
+      </li>
+      <li class="nav__list-item">
+        <a href="index.html" class="nav__list-link">
+          <!-- badge추가 -->
+          <div class="nav__badge">8</div>
+          <i class="fas fa-comment"></i>
+        </a>
+      </li>
+      <li class="nav__list-item">
+        <a href="find.html" class="nav__list-link">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+      <li class="nav__list-item">
+        <a href="more.html" class="nav__list-link">
+          <i class="fas fa-ellipsis-h"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+
 </html>

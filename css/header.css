@@ -9,6 +9,7 @@
 .header .header__title {
     font-size: 24px;
     font-weight: 600;
+    margin-top: 50px;
 }
 
 .header .header__icon {

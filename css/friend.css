@@ -1,0 +1,16 @@
+.friend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friend .friend__avatar {
+    width: 50px;
+    border-radius: 35%;
+}
+
+/* 붙여 쓰면 동시에 2개 다 적용한다는 것. 띄우면 friend__avatar내에 .g-avatar적용 */
+.friend__avatar.g-avatar {
+    /* width: 70px; */
+
+}
