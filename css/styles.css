@@ -7,6 +7,8 @@
 @import "friends.css";
 @import "find.css";
 @import "more.css";
+@import "settings.css";
+@import "chat.css";
 
 /* border-box란?
 padding을 추가해도 box size가 바뀌지 않게 해줌 */

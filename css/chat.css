@@ -1,0 +1,52 @@
+.chats-body {
+    padding: 10px 0px;
+    padding-top: 100px;
+}
+
+.chats-body .header,
+.chats-body .status-bar {
+    padding: 0px 20px;
+}
+
+.chats-body {
+    background-image: url("../images/chatBg.png");
+    min-height: 1000vh;
+}
+
+.chat__write {
+    position: fixed;
+    bottom: 50px;
+    width: 80%;
+    /* 0 auto 0 0 은 완전 가운데 정렬하는 방법 */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #95c0ba;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 20px;
+    /* box-shadow : 그림자의 수평, 수직, blur, 색 */
+    box-shadow: 3px 7px 20px rgba(0, 0, 0, 0.5);
+}
+
+.chat__write i {
+    font-size: 20px;
+}
+
+.chat__write-column:nth-child(2) {
+    width: 80%;
+
+}
+
+.chat__write-column input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+}
+
+.chat__write-column input:focus {
+    outline: none;
+    font-size: 13px;
+}
