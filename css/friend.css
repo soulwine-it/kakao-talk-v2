@@ -5,12 +5,49 @@
 }
 
 .friend .friend__avatar {
-    width: 50px;
-    border-radius: 35%;
+    width: 65px;
+    height: 50px;
+    border-radius: 38%;
 }
 
 /* 붙여 쓰면 동시에 2개 다 적용한다는 것. 띄우면 friend__avatar내에 .g-avatar적용 */
 .friend__avatar.g-avatar {
-    /* width: 70px; */
+    width: 70px;
+    height: 60px;
+
+}
+
+.firend__avatar.g-avatar {
+    width: 60px;
+}
+
+.friend .friend__column {
+    display: flex;
+    align-items: center;
+}
+
+.friend__column .friend__avatar {
+    margin-right: 15px;
+}
+
+.friend__content .friend__name {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.friend__content .friend__status,
+.friend__content .friend__bottom-text,
+.friend .chat__timestamp {
+    opacity: 0.6;
+}
+
+.friend__content .friend__bottom-text {
+    font-size: 14px;
+
+}
+
+.friend__content .friend__status,
+.friend .chat__timestamp {
+    font-size: 12px;
 
 }

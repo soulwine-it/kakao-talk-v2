@@ -1,93 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Chat | Kakao Clone</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- 시간, 알람, 와이파이등 최상단 아이콘 -->
     <!-- .status-bar g하면 아래처럼 div class~~가 생김 -->
     <div class="status-bar">
-      <!-- .status-bar*2 하면 2개의 div 박스가 생김 -->
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:56</span>
-      </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
+        <!-- .status-bar*2 하면 2개의 div 박스가 생김 -->
+        <div class="status-bar__column">
+            <span class="status-bar__clock">13:56</span>
+        </div>
+        <div class="status-bar__column">
+            <i class="fas fa-clock"></i>
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-wifi"></i>
+            <span class="status-bar__battery-level">100%</span>
+            <i class="fas fa-battery-full"></i>
+        </div>
     </div>
     <!-- 헤더 title과 검색아이콘, 채팅아이콘, 설정 아이콘 생성 -->
     <header class="header">
-      <div class="header__header-column">
-        <a href="index.html" class="header__back-btn">
-          <i class="fas fa-arrow-left fa-ex"></i>
-        </a>
-        <h1 class="header__title">Best Friend</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-bars"></i>
-        </span>
-      </div>
+        <div class="header__header-column">
+            <a href="index.html" class="header__back-btn">
+                <i class="fas fa-arrow-left fa-ex"></i>
+            </a>
+            <h1 class="header__title">Best Friend</h1>
+        </div>
+        <div class="header__header-column">
+            <span class="header__icon">
+                <i class="fas fa-search"></i>
+            </span>
+            <span class="header__icon">
+                <i class="fas fa-bars"></i>
+            </span>
+        </div>
     </header>
     <!-- 카카오톡 채팅방 -->
     <main class="chat">
-      <ul class="chat__messages">
-        <span class="chat__timestamp">Friday, January 11, 2019</span>
-        <li class="incoming-message message">
-          <img src="images/avatar.jpg" class="g-avatar message__avatar" />
-          <div class="message__content">
-            <span class="message__author">Best Friend</span>
-            <div class="message__bubble">
-              Congrats I love you!
-            </div>
-          </div>
-          <span class="message__timestamp"></span>
-        </li>
+        <ul class="chat__messages">
+            <span class="chat__timestamp">Friday, January 11, 2019</span>
+            <li class="incoming-message message">
+                <img src="images/avatar.jpg" class="m-avatar message__avatar" />
+                <div class="message__content">
+                    <span class="message__author">Best Friend</span>
+                    <div class="message__bubble">
+                        Congrats I love you!
+                    </div>
+                </div>
+                <span class="message__timestamp"></span>
+            </li>
 
-        <li class="incoming-message message">
-          <span class="message__timestamp"></span>
-          <div class="message__content">
-            <div class="message__bubble">
-              Thank you see you soon!
-            </div>
-          </div>
-        </li>
-      </ul>
+            <li class="incoming-message message">
+                <span class="message__timestamp"></span>
+                <div class="message__content">
+                    <div class="message__bubble">
+                        Thank you see you soon!
+                    </div>
+                </div>
+            </li>
+        </ul>
     </main>
 
     <!-- 카카오톡 메시지 입력창 -->
     <div class="chat__write">
-      <div class="chat__write-column">
-        <i class="far fa-plus-square"></i>
-      </div>
-      <div class="chat__write-column">
-        <input type="text" placeholder="Send message" class="chat_" />
-      </div>
-      <div class="chat__write-column">
-        <span class="chat__write-icon">
-          <i class="far fa-smile-wink"></i>
-        </span>
-        <span class="chat__write-icon">
-          <i class="fas fa-microphone"></i>
-        </span>
-      </div>
+        <div class="chat__write-column">
+            <i class="far fa-plus-square"></i>
+        </div>
+        <div class="chat__write-column">
+            <input type="text" placeholder="Send message" class="chat_" />
+        </div>
+        <div class="chat__write-column">
+            <span class="chat__write-icon">
+                <i class="far fa-smile-wink"></i>
+            </span>
+            <span class="chat__write-icon">
+                <i class="fas fa-microphone"></i>
+            </span>
+        </div>
     </div>
-  </body>
+</body>
+
 </html>
