@@ -45,7 +45,8 @@
     right: 10px;
 }
 
-/* @keyframes float {
+/* message animation */
+@keyframes float {
     0% {
         box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
             0 18px 36px -18px rgba(0, 0, 0, 0.3),
@@ -63,7 +64,7 @@
             0 18px 36px -18px rgba(0, 0, 0, 0.3),
             0 -12px 36px -8px rgba(0, 0, 0, 0.025);
     }
-} */
+}
 
 /* chat input */
 .chat__write {
@@ -75,17 +76,22 @@
     width: 100%;
     border: none;
     font-size: 14px;
+    /* send message animation */
     transition: width 0.5s ease-in-out, box-shadow 0.5s ease-in-out,
         border-radius 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
+/* input 같은 요소를 클릭해 선택해서 입력하는 동안이나 선택해 있는 동안의 스타일 지정. */
+/* send message 애니메이션 효과 */
 .chat__write:focus {
     outline: none;
     width: 80%;
+    /* send message가 위로 올라갑니다. 숫자는 높이를 말함 */
     transform: translateY(-100px);
     border-radius: 40px;
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
         0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    /* float 설정한 것을 적용하는 애니메이션     */
     animation: float 3s linear infinite forwards;
 }
 
@@ -183,4 +189,37 @@ to right를 적으면 좌에서 우로 안적으면 위에서 아래로 색이 �
 .sent-message .message__bubble {
     border-bottom-right-radius: 0px;
     background-image: linear-gradient(to left, #00c6ff, #0072ff);
+}
+
+@keyframes incomingAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+
+    to {
+        opacity: 2;
+        transform: none;
+    }
+}
+
+.incoming-message {
+    animation: incomingAnimation 1s ease-in forwards;
+}
+
+@keyframes sendAnimation {
+    from {
+        opacity: 0;
+        transform: translate(150px);
+    }
+
+    to {
+        opacity: 2;
+        transform: none;
+    }
+}
+
+/* forward는 끝난후에도 valu를 유지하는 명령어 */
+.sent-message {
+    animation: sendAnimation 1s ease-in forwards;
 }
