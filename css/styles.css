@@ -4,6 +4,7 @@
 @import "header.css";
 @import "nav-bar.css";
 @import "friend.css";
+@import "friends.css";
 
 /* border-box란?
 padding을 추가해도 box size가 바뀌지 않게 해줌 */
