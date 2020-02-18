@@ -65,6 +65,7 @@
     }
 } */
 
+/* chat input */
 .chat__write {
     margin: 0 auto;
     bottom: 0px;
@@ -88,6 +89,7 @@
     animation: float 3s linear infinite forwards;
 }
 
+/* input창을 클릭하면 Send message에 opacity 기능이 실행됨 */
 .chat__icon {
     font-size: 18px;
     transition: opacity 0.3s ease-in-out;
