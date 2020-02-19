@@ -1,79 +1,75 @@
 .friend {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .friend .friend__avatar {
-    width: 65px;
-    height: 50px;
-    border-radius: 38%;
+  width: 65px;
+  height: 50px;
+  border-radius: 38%;
 }
 
 /* 붙여 쓰면 동시에 2개 다 적용한다는 것. 띄우면 friend__avatar내에 .g-avatar적용 */
 .friend__avatar.g-avatar {
-    width: 70px;
-    height: 60px;
-
+  width: 70px;
+  height: 60px;
 }
 
 .firend__avatar.g-avatar {
-    width: 60px;
+  width: 60px;
 }
 
 .friend .friend__column {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .friend__column .friend__avatar {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 .friend__content .friend__name {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 5px;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .friend__content .friend__status,
 .friend__content .friend__bottom-text,
 .friend .chat__timestamp {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .friend__content .friend__bottom-text {
-    font-size: 14px;
-
+  font-size: 14px;
 }
 
 .friend__content .friend__status,
 .friend .chat__timestamp {
-    font-size: 12px;
-
+  font-size: 12px;
 }
 
 .friend .friend__now-listening {
-    border: 2px solid #acf5c1;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 14px;
+  border: 2px solid #acf5c1;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
 }
 
 .friend__now-listening span {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .friend__now-listening i {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .friend__add-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f5f5;
-    padding: 10px 15px;
-    border-radius: 5px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
