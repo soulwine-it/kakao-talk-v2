@@ -1,5 +1,5 @@
 # kakao-talk-v2
- kakao-clone : web : https://soulwine-it.github.io/kakao-talk-v2/friends.html
+ web실행 : https://soulwine-it.github.io/kakao-talk-v2/friends.html
 
 색상 찾기
 ColorZilla: https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en
